@@ -2,7 +2,7 @@
 printf ".........WELCOME TO PIN CODE VALIDATION PROGRAM.........\n"
 
 shopt -s extglob
-pattern="[0-9]{6}"
+pattern="^[0-9]{6}"
 read -p "Enter pin: " pin
 if [[ $pin =~ $pattern ]]
 then
